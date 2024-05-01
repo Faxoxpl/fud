@@ -1,5 +1,7 @@
 cls
 
+@echo off
+
 powershell -window hidden -command ""
 
 
